@@ -12891,3 +12891,4 @@ Webflow.require("ix2").init({
     ],
   },
 });
+exports.build=series(scssTask,jsTask);
