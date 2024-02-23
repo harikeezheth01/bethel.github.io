@@ -1,3 +1,4 @@
+
 (() => {
   var J_ = Object.create;
   var un = Object.defineProperty;
@@ -12438,70 +12439,7 @@ Webflow.require("ix2").init({
           parameterLabel: "Scroll",
           continuousActionGroups: [
             {
-              keyframe: 10,
-              actionItems: [
-                {
-                  id: "a-19-n",
-                  actionTypeId: "STYLE_SIZE",
-                  config: {
-                    delay: 0,
-                    easing: "",
-                    duration: 500,
-                    target: {
-                      useEventTarget: "CHILDREN",
-                      selector: ".round",
-                      selectorGuids: ["e4aa215c-477d-1aad-feb9-7562b9820ac7"],
-                    },
-                    widthValue: 0,
-                    heightValue: 0,
-                    widthUnit: "%",
-                    heightUnit: "%",
-                    locked: false,
-                  },
-                },
-                {
-                  id: "a-19-n-4",
-                  actionTypeId: "TRANSFORM_SCALE",
-                  config: {
-                    delay: 0,
-                    easing: "",
-                    duration: 500,
-                    target: {
-                      useEventTarget: "CHILDREN",
-                      selector: ".round",
-                      selectorGuids: ["e4aa215c-477d-1aad-feb9-7562b9820ac7"],
-                    },
-                    xValue: 0,
-                    yValue: 0,
-                    locked: true,
-                  },
-                },
-              ],
-            },
-            {
-              keyframe: 40,
-              actionItems: [
-                {
-                  id: "a-19-n-5",
-                  actionTypeId: "TRANSFORM_SCALE",
-                  config: {
-                    delay: 0,
-                    easing: "",
-                    duration: 500,
-                    target: {
-                      useEventTarget: "CHILDREN",
-                      selector: ".round",
-                      selectorGuids: ["e4aa215c-477d-1aad-feb9-7562b9820ac7"],
-                    },
-                    xValue: 1,
-                    yValue: 1,
-                    locked: true,
-                  },
-                },
-              ],
-            },
-            {
-              keyframe: 60,
+              keyframe: 15,
               actionItems: [
                 {
                   id: "a-19-n-2",
@@ -12525,7 +12463,7 @@ Webflow.require("ix2").init({
               ],
             },
             {
-              keyframe: 80,
+              keyframe: 40,
               actionItems: [
                 {
                   id: "a-19-n-3",
@@ -12566,7 +12504,7 @@ Webflow.require("ix2").init({
               ],
             },
             {
-              keyframe: 100,
+              keyframe: 80,
               actionItems: [
                 {
                   id: "a-19-n-7",
