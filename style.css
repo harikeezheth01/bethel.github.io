@@ -301,7 +301,7 @@ pre.w-code-block code {
 }
 
 .w-webflow-badge, .w-webflow-badge * {
-  z-index: 0;
+  z-index: auto;
   visibility: hidden;
   box-sizing: border-box;
   width: auto;
@@ -357,18 +357,18 @@ pre.w-code-block code {
   white-space: nowrap;
   cursor: pointer;
   box-shadow: 0 0 0 1px rgba(0, 0, 0, .1), 0 1px 3px rgba(0, 0, 0, .1);
-  visibility: hidden;
-  z-index: 0;
-  color: #aaadb0 ;
+  visibility: hidden !important;
+  z-index: 0 !important;
+  color: #aaadb0 !important;
   opacity: 0 !important;
-  width: auto !important;
-  height: auto !important;
+  width: 0 !important;
+  height: 0 !important;
   background-color: #fff !important;
-  border-radius: 0% !important;
+  border-radius: 3px !important;
   margin: 0 !important;
-  padding: 6px !important;
-  font-size: 12px !important;
-  line-height: 14px !important;
+  padding: 0px!important;
+  font-size: 0px !important;
+  line-height: 0px !important;
   text-decoration: none !important;
   display: inline-block !important;
   position: fixed !important;
@@ -2096,14 +2096,14 @@ textarea.w-input, textarea.w-select {
 }
 
 :root {
-  --untitled-ui-primary100: #f4ebff;
+  --e-green: #07342c;
   --tan: #b68d40;
   --untitled-ui-gray900: #101828;
   --green: var(--tan);
-  --e-green: #07342c;
   --untitled-ui-primary600: #7f56d9;
   --untitled-ui-white: white;
   --untitled-ui-primary700: #6941c6;
+  --untitled-ui-primary100: #f4ebff;
   --untitled-ui-gray300: #d0d5dd;
   --untitled-ui-gray700: #344054;
   --untitled-ui-gray100: #f2f4f7;
@@ -2461,7 +2461,7 @@ textarea.w-input, textarea.w-select {
 .navbar-logo-left-container-2.shadow-three {
   width: 100%;
   max-width: 1140px;
-  margin-bottom: 0;
+  margin-bottom: -3px;
   padding-top: 20px;
   padding-bottom: 20px;
   position: static;
@@ -2470,7 +2470,7 @@ textarea.w-input, textarea.w-select {
 
 .container-2 {
   width: 100%;
-  max-width: 940px;
+  max-width: 94%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -2508,13 +2508,13 @@ textarea.w-input, textarea.w-select {
 }
 
 .home {
-  color: var(--untitled-ui-primary100);
+  color: var(--e-green);
   letter-spacing: .25px;
   margin-left: 5px;
   margin-right: 5px;
   padding: 5px 10px;
   font-family: Montserrat, sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 500;
   line-height: 20px;
   text-decoration: none;
@@ -2634,7 +2634,7 @@ textarea.w-input, textarea.w-select {
   border-radius: 14px 14px 0;
   padding: 12px 25px;
   font-family: Montserrat, sans-serif;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 600;
   line-height: 20px;
   transition: all .2s;
@@ -3199,7 +3199,7 @@ textarea.w-input, textarea.w-select {
 
 .image-3 {
   width: 100vw;
-  height: 50vw;
+  height: 40vw;
   max-width: 100%;
   aspect-ratio: auto;
   object-fit: cover;
@@ -3208,19 +3208,26 @@ textarea.w-input, textarea.w-select {
 
 .cell-4 {
   background-color: var(--e-greenn);
+  background-image: url("https://assets-global.website-files.com/655f00e0cf5e283d9d576d32/65d8e9042169218bee3e9ee2_Yellow%20Minimalist%20Wedding%20Invitation%20Landscape-3.jpg");
+  background-position: 50%;
+  background-size: cover;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 115px 60px 91px;
+  padding: 45px;
 }
 
 .paragraph-2 {
+  width: 50vw;
   color: var(--tan);
+  letter-spacing: normal;
+  text-transform: none;
   justify-content: flex-start;
   align-items: flex-end;
   padding-bottom: 0;
-  font-family: Anek Malayalam, sans-serif;
-  font-size: 22px;
+  font-family: Varela Round, sans-serif;
+  font-size: 14px;
+  font-style: normal;
   line-height: 25px;
   display: flex;
 }
@@ -4621,11 +4628,11 @@ textarea.w-input, textarea.w-select {
 .round {
   min-height: 20em;
   min-width: 20em;
-  background-image: url("https://assets-global.website-files.com/655f00e0cf5e283d9d576d32/65bc0aa00afc6242dd8de1f5_87f8cc35-d7bc-441e-b87b-d6350b324615_2k.jpeg"), url("https://assets-global.website-files.com/655f00e0cf5e283d9d576d32/65bc06c9a63d432f144d4799_IMG_0453-2.jpg"), url("https://assets-global.website-files.com/655f00e0cf5e283d9d576d32/655f03058c4f400c8326dea6_cuisine-food-india-indian-wallpaper-preview.jpg");
-  background-position: 50%, 50%, 50%;
-  background-repeat: repeat, repeat, repeat;
-  background-size: auto, auto, cover;
-  background-attachment: scroll, scroll, scroll;
+  background-image: url("https://assets-global.website-files.com/655f00e0cf5e283d9d576d32/65bc0aa00afc6242dd8de1f5_87f8cc35-d7bc-441e-b87b-d6350b324615_2k.jpeg"), url("https://assets-global.website-files.com/655f00e0cf5e283d9d576d32/65bc06c9a63d432f144d4799_IMG_0453-2.jpg");
+  background-position: 50%, 50%;
+  background-repeat: repeat, repeat;
+  background-size: auto, auto;
+  background-attachment: scroll, scroll;
   border-radius: 10rem;
   justify-content: center;
   align-items: center;
@@ -4853,7 +4860,7 @@ textarea.w-input, textarea.w-select {
 }
 
 .container-16 {
-  height: 100svh;
+  height: 25svh;
 }
 
 .section-9 {
@@ -5084,6 +5091,9 @@ textarea.w-input, textarea.w-select {
 
 .footer-subscribe-3 {
   background-color: var(--e-greenn);
+  background-image: url("https://assets-global.website-files.com/655f00e0cf5e283d9d576d32/65d8eefcedd81d34654e0010_Yellow%20Minimalist%20Wedding%20Invitation%20Landscape-5.jpg");
+  background-position: 50%;
+  background-size: cover;
   border-bottom: 1px solid #e4ebf3;
   padding: 50px 30px 40px;
   position: relative;
@@ -5413,7 +5423,9 @@ textarea.w-input, textarea.w-select {
 }
 
 .uui-page-padding-4 {
-  background-color: var(--e-greenn);
+  background-image: url("https://assets-global.website-files.com/655f00e0cf5e283d9d576d32/65d8eefcedd81d34654e0010_Yellow%20Minimalist%20Wedding%20Invitation%20Landscape-5.jpg");
+  background-position: 50%;
+  background-size: cover;
   padding-left: 2rem;
   padding-right: 2rem;
 }
@@ -5620,6 +5632,9 @@ textarea.w-input, textarea.w-select {
 
 .pricing-overview {
   background-color: var(--e-green);
+  background-image: url("https://assets-global.website-files.com/655f00e0cf5e283d9d576d32/65d8eefcedd81d34654e0010_Yellow%20Minimalist%20Wedding%20Invitation%20Landscape-5.jpg");
+  background-position: 50%;
+  background-size: cover;
   border-bottom: 0 solid #e4ebf3;
   padding: 80px 30px;
   position: relative;
@@ -6086,6 +6101,9 @@ textarea.w-input, textarea.w-select {
 .brix---section {
   background-color: var(--e-green);
   color: var(--elements-webflow-library--neutral--100);
+  background-image: url("https://assets-global.website-files.com/655f00e0cf5e283d9d576d32/65d8eefcedd81d34654e0010_Yellow%20Minimalist%20Wedding%20Invitation%20Landscape-5.jpg");
+  background-position: 0 0;
+  background-size: cover;
   padding-top: 176px;
   padding-bottom: 176px;
 }
@@ -6504,7 +6522,49 @@ textarea.w-input, textarea.w-select {
   display: flex;
 }
 
+.image-29 {
+  padding-left: 0;
+}
+
 @media screen and (min-width: 1920px) {
+  .navbar-logo-left-2 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: -173px;
+    display: flex;
+  }
+
+  .navbar-logo-left-container-2.shadow-three {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+  }
+
+  .container-2 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0;
+    margin-right: 0;
+    display: flex;
+  }
+
+  .navbar-wrapper-2 {
+    width: 200%;
+    max-width: 180%;
+    flex: 1;
+    margin-right: 0;
+    padding-right: 0;
+  }
+
+  .home, .contact {
+    font-size: 20px;
+  }
+
   .spacer {
     height: 78vh;
   }
@@ -8128,11 +8188,13 @@ textarea.w-input, textarea.w-select {
   }
 
   .cell-4 {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding: 67px 0 6px;
   }
 
   .paragraph-2 {
+    width: 80vw;
+    margin-top: 81px;
+    padding-bottom: 134px;
     font-family: Varela Round, sans-serif;
     font-size: 14px;
   }
