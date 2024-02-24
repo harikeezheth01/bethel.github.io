@@ -301,11 +301,11 @@ pre.w-code-block code {
 }
 
 .w-webflow-badge, .w-webflow-badge * {
-  z-index: auto;
+  z-index: 0;
   visibility: hidden;
   box-sizing: border-box;
-  width: auto;
-  height: auto;
+  width: 0;
+  height: 0;
   max-height: none;
   max-width: none;
   min-height: 0;
@@ -313,7 +313,7 @@ pre.w-code-block code {
   float: none;
   clear: none;
   box-shadow: none;
-  opacity: 1;
+  opacity: 0;
   direction: ltr;
   font-family: inherit;
   font-weight: inherit;
@@ -361,21 +361,21 @@ pre.w-code-block code {
   z-index: 0 !important;
   color: #aaadb0 !important;
   opacity: 0 !important;
-  width: 0 !important;
-  height: 0 !important;
+  width: auto !important;
+  height: auto !important;
   background-color: #fff !important;
   border-radius: 3px !important;
   margin: 0 !important;
-  padding: 0px!important;
+  padding: 0px !important;
   font-size: 0px !important;
   line-height: 0px !important;
   text-decoration: none !important;
   display: inline-block !important;
   position: fixed !important;
   top: auto !important;
-  bottom: 12px !important;
+  bottom: 0px !important;
   left: auto !important;
-  right: 12px !important;
+  right: 0px !important;
   overflow: visible !important;
   transform: none !important;
 }
@@ -2096,8 +2096,8 @@ textarea.w-input, textarea.w-select {
 }
 
 :root {
-  --e-green: #07342c;
   --tan: #b68d40;
+  --e-green: #07342c;
   --untitled-ui-gray900: #101828;
   --green: var(--tan);
   --untitled-ui-primary600: #7f56d9;
@@ -2508,8 +2508,9 @@ textarea.w-input, textarea.w-select {
 }
 
 .home {
-  color: var(--e-green);
+  color: var(--tan);
   letter-spacing: .25px;
+  text-transform: uppercase;
   margin-left: 5px;
   margin-right: 5px;
   padding: 5px 10px;
@@ -2521,7 +2522,7 @@ textarea.w-input, textarea.w-select {
 }
 
 .home:hover {
-  color: var(--tan);
+  color: var(--e-green);
 }
 
 .home:focus-visible {
@@ -3220,6 +3221,7 @@ textarea.w-input, textarea.w-select {
 .paragraph-2 {
   width: 50vw;
   color: var(--tan);
+  text-align: center;
   letter-spacing: normal;
   text-transform: none;
   justify-content: flex-start;
@@ -5636,6 +5638,7 @@ textarea.w-input, textarea.w-select {
   background-position: 50%;
   background-size: cover;
   border-bottom: 0 solid #e4ebf3;
+  margin-top: -1119px;
   padding: 80px 30px;
   position: relative;
 }
@@ -6524,6 +6527,10 @@ textarea.w-input, textarea.w-select {
 
 .image-29 {
   padding-left: 0;
+}
+
+.bold-text, .bold-text-2 {
+  color: var(--green);
 }
 
 @media screen and (min-width: 1920px) {
@@ -8605,7 +8612,7 @@ textarea.w-input, textarea.w-select {
 
   .pricing-overview {
     background-color: var(--e-green);
-    margin-top: -656px;
+    margin-top: -1470px;
   }
 
   .container-21 {
