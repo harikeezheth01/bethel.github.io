@@ -1,4 +1,5 @@
 
+
 (() => {
   var J_ = Object.create;
   var un = Object.defineProperty;
@@ -12402,13 +12403,13 @@ Webflow.require("ix2").init({
       },
       mediaQueries: ["main", "medium", "small", "tiny"],
       target: {
-        id: "655f00e1cf5e283d9d576d36|9bdf578f-37b0-f8f4-96e7-16d3c0b25403",
+        id: "655f00e1cf5e283d9d576d36|53a42c07-fc81-b5fb-3ab9-99dcb79bd033",
         appliesTo: "ELEMENT",
         styleBlockIds: [],
       },
       targets: [
         {
-          id: "655f00e1cf5e283d9d576d36|9bdf578f-37b0-f8f4-96e7-16d3c0b25403",
+          id: "655f00e1cf5e283d9d576d36|53a42c07-fc81-b5fb-3ab9-99dcb79bd033",
           appliesTo: "ELEMENT",
           styleBlockIds: [],
         },
@@ -12425,7 +12426,7 @@ Webflow.require("ix2").init({
           endOffsetValue: 50,
         },
       ],
-      createdOn: 1708670681842,
+      createdOn: 1708842705960,
     },
   },
   actionLists: {
