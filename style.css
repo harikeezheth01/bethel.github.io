@@ -357,10 +357,10 @@ pre.w-code-block code {
   white-space: nowrap;
   cursor: pointer;
   box-shadow: 0 0 0 1px rgba(0, 0, 0, .1), 0 1px 3px rgba(0, 0, 0, .1);
-  visibility: hidden!important;
+  visibility: hidden !important;
   z-index: 0 !important;
   color: #aaadb0 !important;
-  opacity: 1 !important;
+  opacity: 0 !important;
   width: auto !important;
   height: auto !important;
   background-color: #fff !important;
@@ -382,7 +382,7 @@ pre.w-code-block code {
 
 .w-webflow-badge > img {
   visibility: hidden !important;
-  opacity: 1 !important;
+  opacity: 0 !important;
   vertical-align: middle !important;
   display: inline-block !important;
 }
@@ -4844,6 +4844,10 @@ textarea.w-input, textarea.w-select {
 .div-block-18 {
   width: 100%;
   height: 100%;
+  background-image: url("https://assets-global.website-files.com/655f00e0cf5e283d9d576d32/65d8eefcedd81d34654e0010_Yellow%20Minimalist%20Wedding%20Invitation%20Landscape-5.jpg");
+  background-position: 50%;
+  background-size: cover;
+  background-attachment: scroll;
   justify-content: center;
   align-items: center;
   display: flex;
@@ -4887,7 +4891,7 @@ textarea.w-input, textarea.w-select {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin-top: 536px;
+  margin-top: 60px;
   padding-left: 3em;
   padding-right: 3em;
   display: flex;
@@ -4900,6 +4904,8 @@ textarea.w-input, textarea.w-select {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+  margin-top: -190px;
+  padding-top: 0;
   display: flex;
   position: relative;
 }
@@ -4907,6 +4913,7 @@ textarea.w-input, textarea.w-select {
 .heading-7 {
   color: #f2f4f7;
   margin-top: 50px;
+  font-family: Montserrat, sans-serif;
   font-size: 50px;
 }
 
@@ -5642,11 +5649,12 @@ textarea.w-input, textarea.w-select {
 
 .pricing-overview {
   background-color: var(--e-green);
-  background-image: url("https://assets-global.website-files.com/655f00e0cf5e283d9d576d32/65d8eefcedd81d34654e0010_Yellow%20Minimalist%20Wedding%20Invitation%20Landscape-5.jpg");
+  background-image: url("https://assets-global.website-files.com/655f00e0cf5e283d9d576d32/65d83da3ddba0eee476878a7_Untitled%20design.png");
   background-position: 50%;
   background-size: cover;
+  background-attachment: fixed;
   border-bottom: 0 solid #e4ebf3;
-  margin-top: -2059px;
+  margin-top: -2327px;
   padding: 80px 30px;
   position: relative;
 }
@@ -6270,11 +6278,12 @@ textarea.w-input, textarea.w-select {
 .hero-heading-center-8 {
   -webkit-backdrop-filter: blur();
   backdrop-filter: blur();
-  background-image: url("https://assets-global.website-files.com/655f00e0cf5e283d9d576d32/65d83da3ddba0eee476878a7_Untitled%20design.png");
-  background-position: 50%;
-  background-size: cover;
-  background-attachment: fixed;
-  padding: 80px 30px;
+  background-image: url("https://assets-global.website-files.com/655f00e0cf5e283d9d576d32/65d8eefcedd81d34654e0010_Yellow%20Minimalist%20Wedding%20Invitation%20Landscape-5.jpg"), url("https://assets-global.website-files.com/655f00e0cf5e283d9d576d32/65d83da3ddba0eee476878a7_Untitled%20design.png");
+  background-position: 50%, 50%;
+  background-size: cover, cover;
+  background-attachment: scroll, fixed;
+  margin-top: -152px;
+  padding: 84px 30px 80px;
   position: relative;
 }
 
@@ -6565,14 +6574,9 @@ textarea.w-input, textarea.w-select {
 }
 
 .hero-heading-center-9 {
-  background-color: var(--e-green);
-  background-image: url("https://assets-global.website-files.com/655f00e0cf5e283d9d576d32/65d8eefcedd81d34654e0010_Yellow%20Minimalist%20Wedding%20Invitation%20Landscape-5.jpg");
-  background-position: 50%;
-  background-size: cover;
-  background-attachment: fixed;
-  border-bottom: 1px solid #e4ebf3;
+  border: 0 solid #000;
   border-radius: 0;
-  margin-top: 429px;
+  margin-top: 413px;
   margin-bottom: -57px;
   padding: 78px 30px 102px;
   position: relative;
@@ -6584,6 +6588,7 @@ textarea.w-input, textarea.w-select {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: -614px;
   margin-left: auto;
   margin-right: auto;
   display: flex;
@@ -8684,7 +8689,13 @@ textarea.w-input, textarea.w-select {
 
   .quick-stack-15 {
     grid-row-gap: 20px;
+    background-image: url("https://assets-global.website-files.com/655f00e0cf5e283d9d576d32/65d83da3ddba0eee476878a7_Untitled%20design.png");
+    background-position: 50%;
+    background-size: cover;
+    background-attachment: fixed;
     flex: 1;
+    margin-bottom: -618px;
+    padding-bottom: 0;
   }
 
   .container-16 {
@@ -8707,6 +8718,7 @@ textarea.w-input, textarea.w-select {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: -853px;
     font-size: 1.3em;
   }
 
@@ -8797,7 +8809,7 @@ textarea.w-input, textarea.w-select {
 
   .pricing-overview {
     background-color: var(--e-green);
-    margin-top: -2391px;
+    margin-top: -2991px;
   }
 
   .container-21 {
@@ -8937,6 +8949,13 @@ textarea.w-input, textarea.w-select {
     text-align: center;
   }
 
+  .hero-heading-center-8 {
+    background-image: url("https://assets-global.website-files.com/655f00e0cf5e283d9d576d32/65d8eefcedd81d34654e0010_Yellow%20Minimalist%20Wedding%20Invitation%20Landscape-5.jpg"), url("https://assets-global.website-files.com/655f00e0cf5e283d9d576d32/65d83da3ddba0eee476878a7_Untitled%20design.png");
+    background-position: 50%, 50%;
+    background-size: cover, cover;
+    background-attachment: scroll, fixed;
+  }
+
   .container-23 {
     max-width: none;
   }
@@ -9003,6 +9022,7 @@ textarea.w-input, textarea.w-select {
   }
 
   .centered-heading-11.margin-bottom-32px {
+    margin-top: -568px;
     margin-left: 1px;
     margin-right: 1px;
     padding-left: 0;
