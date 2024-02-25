@@ -304,8 +304,8 @@ pre.w-code-block code {
   z-index: 0;
   visibility: hidden;
   box-sizing: border-box;
-  width: 0;
-  height: 0;
+  width: auto;
+  height: auto;
   max-height: none;
   max-width: none;
   min-height: 0;
@@ -313,7 +313,7 @@ pre.w-code-block code {
   float: none;
   clear: none;
   box-shadow: none;
-  opacity: 0;
+  opacity: 1;
   direction: ltr;
   font-family: inherit;
   font-weight: inherit;
@@ -357,32 +357,32 @@ pre.w-code-block code {
   white-space: nowrap;
   cursor: pointer;
   box-shadow: 0 0 0 1px rgba(0, 0, 0, .1), 0 1px 3px rgba(0, 0, 0, .1);
-  visibility: hidden !important;
+  visibility: hidden!important;
   z-index: 0 !important;
   color: #aaadb0 !important;
-  opacity: 0 !important;
+  opacity: 1 !important;
   width: auto !important;
   height: auto !important;
   background-color: #fff !important;
   border-radius: 3px !important;
   margin: 0 !important;
-  padding: 0px !important;
-  font-size: 0px !important;
-  line-height: 0px !important;
+  padding: 6px !important;
+  font-size: 12px !important;
+  line-height: 14px !important;
   text-decoration: none !important;
   display: inline-block !important;
   position: fixed !important;
   top: auto !important;
-  bottom: 0px !important;
+  bottom: 12px !important;
   left: auto !important;
-  right: 0px !important;
+  right: 12px !important;
   overflow: visible !important;
   transform: none !important;
 }
 
 .w-webflow-badge > img {
   visibility: hidden !important;
-  opacity: 0 !important;
+  opacity: 1 !important;
   vertical-align: middle !important;
   display: inline-block !important;
 }
@@ -2110,8 +2110,8 @@ textarea.w-input, textarea.w-select {
   --untitled-ui-gray600: #475467;
   --untitled-ui-primary500: #9e77ed;
   --untitled-ui-primary50-2: #f9f5ff;
-  --e-greenn: #07342c;
   --untitled-ui-gray200: #eaecf0;
+  --e-greenn: #07342c;
   --untitled-ui--primary800: #53389e;
   --untitled-ui--warning300: #fec84b;
   --untitled-ui-gray500: #667085;
@@ -2125,7 +2125,7 @@ textarea.w-input, textarea.w-select {
   --elements-webflow-library--neutral--100: white;
   --gray: var(--untitled-ui-gray900);
   --untitled-ui-gray400: #98a2b3;
-  --color: #fc0;
+  --color: #fc1;
   --untitled-ui--primary300: #d6bbfb;
 }
 
@@ -2471,16 +2471,21 @@ textarea.w-input, textarea.w-select {
 .container-2 {
   width: 100%;
   max-width: 94%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin-left: auto;
   margin-right: auto;
+  display: flex;
 }
 
 .navbar-wrapper-2 {
-  width: 100%;
+  width: 110%;
   max-width: 1140px;
-  margin-bottom: 0;
+  margin: -23px -130px 0;
   padding-top: 20px;
   padding-bottom: 20px;
+  padding-right: 0;
   position: static;
   top: 0;
 }
@@ -3188,6 +3193,7 @@ textarea.w-input, textarea.w-select {
   grid-auto-columns: 1fr;
   justify-content: center;
   align-items: center;
+  padding: 0;
   display: flex;
 }
 
@@ -3208,14 +3214,13 @@ textarea.w-input, textarea.w-select {
 }
 
 .cell-4 {
-  background-color: var(--e-greenn);
-  background-image: url("https://assets-global.website-files.com/655f00e0cf5e283d9d576d32/65d8e9042169218bee3e9ee2_Yellow%20Minimalist%20Wedding%20Invitation%20Landscape-3.jpg");
+  background-image: url("https://assets-global.website-files.com/655f00e0cf5e283d9d576d32/65d9acbb681990b6ac973348_bethel%20bg.jpg");
   background-position: 50%;
   background-size: cover;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 45px;
+  padding: 50px;
 }
 
 .paragraph-2 {
@@ -4859,6 +4864,7 @@ textarea.w-input, textarea.w-select {
 .quick-stack-15 {
   width: 100%;
   height: 80%;
+  padding-top: 70px;
 }
 
 .container-16 {
@@ -4881,6 +4887,7 @@ textarea.w-input, textarea.w-select {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  margin-top: 536px;
   padding-left: 3em;
   padding-right: 3em;
   display: flex;
@@ -4899,6 +4906,7 @@ textarea.w-input, textarea.w-select {
 
 .heading-7 {
   color: #f2f4f7;
+  margin-top: 50px;
   font-size: 50px;
 }
 
@@ -5638,7 +5646,7 @@ textarea.w-input, textarea.w-select {
   background-position: 50%;
   background-size: cover;
   border-bottom: 0 solid #e4ebf3;
-  margin-top: -1119px;
+  margin-top: -2059px;
   padding: 80px 30px;
   position: relative;
 }
@@ -6273,6 +6281,8 @@ textarea.w-input, textarea.w-select {
 .container-23 {
   width: 100%;
   max-width: 940px;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
   margin-left: auto;
   margin-right: auto;
 }
@@ -6329,10 +6339,13 @@ textarea.w-input, textarea.w-select {
 }
 
 .heading-14 {
-  color: var(--green);
+  color: var(--untitled-ui-primary100);
   text-align: center;
-  padding: 22px;
+  margin-top: 17px;
+  margin-bottom: 7px;
+  padding: 22px 22px 17px;
   font-family: Montserrat, sans-serif;
+  font-size: 40px;
 }
 
 .paragraph-11 {
@@ -6350,9 +6363,10 @@ textarea.w-input, textarea.w-select {
 
 .paragraph-12 {
   color: var(--untitled-ui-primary100);
+  text-align: center;
   padding: 21px 21px 23px;
   font-family: Varela Round, sans-serif;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .video-16, .video-17, .video-18 {
@@ -6533,6 +6547,146 @@ textarea.w-input, textarea.w-select {
   color: var(--green);
 }
 
+.paragraph-13 {
+  color: var(--green);
+  text-align: center;
+  padding-top: 39px;
+  font-family: Cinzel Decorative, sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.heading-15 {
+  color: var(--green);
+  margin-top: -14px;
+  margin-bottom: -22px;
+  font-family: Cinzel Decorative, sans-serif;
+  font-size: 32px;
+}
+
+.hero-heading-center-9 {
+  background-color: var(--e-green);
+  background-image: url("https://assets-global.website-files.com/655f00e0cf5e283d9d576d32/65d8eefcedd81d34654e0010_Yellow%20Minimalist%20Wedding%20Invitation%20Landscape-5.jpg");
+  background-position: 50%;
+  background-size: cover;
+  background-attachment: fixed;
+  border-bottom: 1px solid #e4ebf3;
+  border-radius: 0;
+  margin-top: 429px;
+  margin-bottom: -57px;
+  padding: 78px 30px 102px;
+  position: relative;
+}
+
+.container-25 {
+  width: 100%;
+  max-width: 940px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+}
+
+.centered-heading-11 {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.centered-heading-11.margin-bottom-32px {
+  color: #f2f4f7;
+  margin-bottom: 32px;
+  font-family: Montserrat, sans-serif;
+  font-size: 50px;
+}
+
+.hero-wrapper-10 {
+  text-align: center;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+.hero-split-10 {
+  max-width: 46%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.margin-bottom-24px-12 {
+  margin-bottom: 24px;
+}
+
+.button-primary-14 {
+  color: #fff;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  background-color: #1a1b1f;
+  padding: 12px 25px;
+  font-size: 12px;
+  line-height: 20px;
+  transition: all .2s;
+}
+
+.button-primary-14:hover {
+  color: #fff;
+  background-color: #32343a;
+}
+
+.button-primary-14:active {
+  background-color: #43464d;
+}
+
+.shadow-two-10 {
+  box-shadow: 0 4px 24px rgba(150, 163, 181, .08);
+}
+
+.div-block-26 {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.paragraph-14 {
+  color: var(--green);
+  text-align: center;
+  padding-top: 33px;
+  font-family: Varela Round, sans-serif;
+  font-size: 16px;
+  line-height: 25px;
+}
+
+.heading-16 {
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  direction: ltr;
+  color: var(--green);
+  letter-spacing: 1px;
+  -webkit-text-stroke-width: 0px;
+  -webkit-text-stroke-color: var(--untitled-ui-primary50-2);
+  margin-top: -6px;
+  font-family: Cinzel Decorative, sans-serif;
+  font-size: 25px;
+}
+
+.div-block-27 {
+  -webkit-backdrop-filter: blur(13px);
+  backdrop-filter: blur(13px);
+  border-radius: 14px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 16px;
+  display: flex;
+}
+
+.bold-text-3 {
+  font-family: Cinzel Decorative, sans-serif;
+  font-weight: 400;
+}
+
 @media screen and (min-width: 1920px) {
   .navbar-logo-left-2 {
     flex-direction: column;
@@ -6565,7 +6719,8 @@ textarea.w-input, textarea.w-select {
     max-width: 180%;
     flex: 1;
     margin-right: 0;
-    padding-right: 0;
+    padding-left: 57px;
+    padding-right: 57px;
   }
 
   .home, .contact {
@@ -7221,6 +7376,22 @@ textarea.w-input, textarea.w-select {
 
   .footer-social-block-three-4 {
     margin-top: 40px;
+  }
+
+  .container-25 {
+    max-width: 728px;
+  }
+
+  .hero-wrapper-10 {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: -40px;
+  }
+
+  .hero-split-10 {
+    max-width: 100%;
+    margin-bottom: 40px;
   }
 }
 
@@ -8090,6 +8261,10 @@ textarea.w-input, textarea.w-select {
     font-size: 14px;
     line-height: 20px;
   }
+
+  .hero-heading-center-9 {
+    padding: 60px 15px;
+  }
 }
 
 @media screen and (max-width: 479px) {
@@ -8145,6 +8320,10 @@ textarea.w-input, textarea.w-select {
 
   .contact:hover {
     background-color: var(--e-green);
+  }
+
+  .menu-button-2 {
+    margin-top: 19px;
   }
 
   .menu-button-2:active {
@@ -8508,6 +8687,10 @@ textarea.w-input, textarea.w-select {
     flex: 1;
   }
 
+  .container-16 {
+    height: 100svh;
+  }
+
   .section-9 {
     height: 200%;
   }
@@ -8529,7 +8712,9 @@ textarea.w-input, textarea.w-select {
 
   .heading-7 {
     color: var(--untitled-ui-gray100);
+    text-align: center;
     font-family: Montserrat, sans-serif;
+    font-size: 40px;
   }
 
   .container-17 {
@@ -8612,7 +8797,7 @@ textarea.w-input, textarea.w-select {
 
   .pricing-overview {
     background-color: var(--e-green);
-    margin-top: -1470px;
+    margin-top: -2391px;
   }
 
   .container-21 {
@@ -8796,15 +8981,58 @@ textarea.w-input, textarea.w-select {
     justify-content: flex-start;
     align-items: flex-start;
   }
+
+  .paragraph-13 {
+    padding-bottom: 64px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 13px;
+  }
+
+  .image-30 {
+    width: 31px;
+    height: 31px;
+  }
+
+  .container-25 {
+    max-width: none;
+  }
+
+  .centered-heading-11 {
+    margin-bottom: 24px;
+  }
+
+  .centered-heading-11.margin-bottom-32px {
+    margin-left: 1px;
+    margin-right: 1px;
+    padding-left: 0;
+    padding-right: 0;
+    font-size: 40px;
+  }
+
+  .paragraph-14 {
+    margin-left: -35px;
+    margin-right: -35px;
+  }
+
+  .heading-16 {
+    text-align: center;
+    font-size: 18px;
+  }
 }
 
-#home-intro-page.w-node-_6958ba3d-8022-7467-2c58-c57db76c7a4c-9d576d36, #w-node-_477cb465-4bb6-0938-5e37-b805449eff9d-9d576d36, #w-node-e0ac7c9e-87bc-5764-4dc6-2fa7d61c2918-9d576d36 {
+#home-intro-page.w-node-_6958ba3d-8022-7467-2c58-c57db76c7a4c-9d576d36, #w-node-_477cb465-4bb6-0938-5e37-b805449eff9d-9d576d36 {
   grid-template-rows: auto;
   grid-template-columns: 1fr 1fr;
 }
 
-#w-node-_9bdf578f-37b0-f8f4-96e7-16d3c0b2540c-9d576d36 {
-  grid-template-rows: auto 500px;
+#w-node-e0ac7c9e-87bc-5764-4dc6-2fa7d61c2918-9d576d36 {
+  grid-template-rows: auto;
+  grid-template-columns: 1.25fr 1fr;
+}
+
+#w-node-_53a42c07-fc81-b5fb-3ab9-99dcb79bd03c-9d576d36 {
+  grid-template-rows: auto;
   grid-template-columns: 1fr 1fr 1fr;
 }
 
@@ -8858,7 +9086,7 @@ textarea.w-input, textarea.w-select {
     grid-template-columns: 1fr 1.5fr;
   }
 
-  #w-node-_9bdf578f-37b0-f8f4-96e7-16d3c0b2540c-9d576d36 {
+  #w-node-_53a42c07-fc81-b5fb-3ab9-99dcb79bd03c-9d576d36 {
     grid-template-rows: auto;
     grid-template-columns: 1fr;
   }
