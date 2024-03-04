@@ -301,11 +301,11 @@ pre.w-code-block code {
 }
 
 .w-webflow-badge, .w-webflow-badge * {
-  z-index: 0;
+  z-index: auto;
   visibility: hidden;
   box-sizing: border-box;
-  width: auto;
-  height: auto;
+  width: 0;
+  height: 0;
   max-height: none;
   max-width: none;
   min-height: 0;
@@ -313,7 +313,7 @@ pre.w-code-block code {
   float: none;
   clear: none;
   box-shadow: none;
-  opacity: 1;
+  opacity: 0;
   direction: ltr;
   font-family: inherit;
   font-weight: inherit;
@@ -4891,7 +4891,7 @@ textarea.w-input, textarea.w-select {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin-top: 60px;
+  margin-top: 120px;
   padding-left: 3em;
   padding-right: 3em;
   display: flex;
@@ -6690,6 +6690,12 @@ textarea.w-input, textarea.w-select {
 .bold-text-3 {
   font-family: Cinzel Decorative, sans-serif;
   font-weight: 400;
+}
+
+.text-block-4 {
+  color: var(--tan);
+  text-align: center;
+  font-family: Varela Round, sans-serif;
 }
 
 @media screen and (min-width: 1920px) {
@@ -8694,7 +8700,9 @@ textarea.w-input, textarea.w-select {
     background-size: cover;
     background-attachment: fixed;
     flex: 1;
+    margin-top: -123px;
     margin-bottom: -618px;
+    padding-top: 158px;
     padding-bottom: 0;
   }
 
@@ -8809,7 +8817,8 @@ textarea.w-input, textarea.w-select {
 
   .pricing-overview {
     background-color: var(--e-green);
-    margin-top: -2991px;
+    margin-top: -2964px;
+    padding-top: 99px;
   }
 
   .container-21 {
@@ -8954,6 +8963,8 @@ textarea.w-input, textarea.w-select {
     background-position: 50%, 50%;
     background-size: cover, cover;
     background-attachment: scroll, fixed;
+    margin-top: -128px;
+    padding-top: 40px;
   }
 
   .container-23 {
@@ -9022,7 +9033,7 @@ textarea.w-input, textarea.w-select {
   }
 
   .centered-heading-11.margin-bottom-32px {
-    margin-top: -568px;
+    margin-top: -535px;
     margin-left: 1px;
     margin-right: 1px;
     padding-left: 0;
