@@ -301,7 +301,7 @@ pre.w-code-block code {
 }
 
 .w-webflow-badge, .w-webflow-badge * {
-  z-index: auto;
+  z-index: 0;
   visibility: hidden;
   box-sizing: border-box;
   width: 0;
@@ -357,12 +357,12 @@ pre.w-code-block code {
   white-space: nowrap;
   cursor: pointer;
   box-shadow: 0 0 0 1px rgba(0, 0, 0, .1), 0 1px 3px rgba(0, 0, 0, .1);
-  visibility: hidden !important;
+  visibility: visible !important;
   z-index: 0 !important;
   color: #aaadb0 !important;
   opacity: 0 !important;
-  width: auto !important;
-  height: auto !important;
+  width: 0 !important;
+  height: 0 !important;
   background-color: #fff !important;
   border-radius: 3px !important;
   margin: 0 !important;
@@ -3206,10 +3206,11 @@ textarea.w-input, textarea.w-select {
 
 .image-3 {
   width: 100vw;
-  height: 40vw;
+  height: 45vw;
   max-width: 100%;
   aspect-ratio: auto;
   object-fit: cover;
+  display: inline-block;
   overflow: hidden;
 }
 
@@ -7896,7 +7897,15 @@ textarea.w-input, textarea.w-select {
     line-height: 20px;
   }
 
-  .hero-heading-center-4, .hero-without-image-5, .hero-heading-center-5 {
+  .hero-heading-center-4 {
+    padding: 60px 15px;
+  }
+
+  .div-block-19 {
+    margin-top: 298px;
+  }
+
+  .hero-without-image-5, .hero-heading-center-5 {
     padding: 60px 15px;
   }
 
@@ -8276,6 +8285,10 @@ textarea.w-input, textarea.w-select {
   .hero-heading-center-9 {
     padding: 60px 15px;
   }
+
+  .container-25 {
+    margin-top: -545px;
+  }
 }
 
 @media screen and (max-width: 479px) {
@@ -8377,7 +8390,7 @@ textarea.w-input, textarea.w-select {
   }
 
   .image-3 {
-    width: 150vw;
+    width: 170vw;
     height: auto;
     max-width: 140%;
     object-fit: fill;
@@ -8701,7 +8714,7 @@ textarea.w-input, textarea.w-select {
     background-attachment: fixed;
     flex: 1;
     margin-top: -123px;
-    margin-bottom: -618px;
+    margin-bottom: -903px;
     padding-top: 158px;
     padding-bottom: 0;
   }
@@ -8794,6 +8807,16 @@ textarea.w-input, textarea.w-select {
     grid-template-columns: 1fr;
   }
 
+  .uui-text-style-link-02 {
+    text-align: center;
+  }
+
+  .uui-contact07_item {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
   .uui-contact07_component {
     grid-template-columns: 1fr;
   }
@@ -8817,7 +8840,7 @@ textarea.w-input, textarea.w-select {
 
   .pricing-overview {
     background-color: var(--e-green);
-    margin-top: -2964px;
+    margin-top: -2874px;
     padding-top: 99px;
   }
 
@@ -8977,7 +9000,7 @@ textarea.w-input, textarea.w-select {
 
   .div-block-24 {
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     display: flex;
   }
@@ -9059,7 +9082,7 @@ textarea.w-input, textarea.w-select {
 
 #w-node-e0ac7c9e-87bc-5764-4dc6-2fa7d61c2918-9d576d36 {
   grid-template-rows: auto;
-  grid-template-columns: 1.25fr 1fr;
+  grid-template-columns: 1.75fr 1fr;
 }
 
 #w-node-_53a42c07-fc81-b5fb-3ab9-99dcb79bd03c-9d576d36 {
@@ -9135,4 +9158,4 @@ textarea.w-input, textarea.w-select {
     grid-template-rows: auto;
     grid-template-columns: 1fr;
   }
-}
+} 
